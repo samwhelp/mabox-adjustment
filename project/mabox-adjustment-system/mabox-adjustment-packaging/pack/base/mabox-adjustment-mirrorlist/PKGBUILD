@@ -1,0 +1,30 @@
+
+
+pkgname=mabox-adjustment-mirrorlist
+pkgver=0.1
+pkgrel=1
+pkgdesc="Mabox Adjustment Mirrorlist"
+url="https://github.com/samwhelp/note-about-mabox/tree/gh-pages/_demo/project/mabox-adjustment-system/mabox-adjustment-packaging/tree/main/pack/base/mabox-adjustment-mirrorlist"
+arch=('any')
+license=('MIT')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+
+prepare () {
+
+	cp -af ../asset/. "${srcdir}"
+
+}
+
+
+package () {
+
+	## install mirrorlist
+	## /etc/pacman.d/mabox-adjustment-mirrorlist
+	install -Dm644 "${srcdir}/overlay/etc/pacman.d/${pkgname}" "${pkgdir}/etc/pacman.d/${pkgname}"
+
+}

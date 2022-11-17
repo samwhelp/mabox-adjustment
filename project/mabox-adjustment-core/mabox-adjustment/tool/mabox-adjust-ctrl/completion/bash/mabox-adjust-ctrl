@@ -1,0 +1,21 @@
+
+##
+## ## Mabox (Manjaro)
+## /usr/local/share/bash-completion/completions/mabox-adjust-ctrl
+## $ sudo install -Dm644 ./mabox-adjust-ctrl /usr/local/share/bash-completion/completions/mabox-adjust-ctrl
+##
+
+_mabox_adjust_ctrl () {
+
+	local cur prev words cword
+	_init_completion || return
+
+	if [ "$cword" = "1" ]; then
+		local action_list=$(DEBUG_MABOX_ADJUST_CTRL=false mabox-adjust-ctrl self_actions)
+		COMPREPLY=( $( compgen -W "$action_list" -- "$cur" ) )
+	fi
+
+	return 0
+}
+
+complete -F _mabox_adjust_ctrl mabox-adjust-ctrl

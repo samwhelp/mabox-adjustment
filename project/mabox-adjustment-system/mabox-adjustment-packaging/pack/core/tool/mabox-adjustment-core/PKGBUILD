@@ -1,0 +1,85 @@
+
+##
+## * https://wiki.archlinux.org/title/Creating_packages
+## * https://wiki.archlinux.org/title/Arch_User_Repository
+## * https://archlinux.org/groups/x86_64/base-devel/
+## * https://wiki.archlinux.org/title/pacman
+## * https://wiki.archlinux.org/title/makepkg
+## * https://wiki.archlinux.org/title/PKGBUILD
+## * https://wiki.archlinux.org/title/Arch_package_guidelines
+##
+
+pkgname=mabox-adjustment-core
+pkgver=0.1
+pkgrel=1
+pkgdesc="Mabox Adjustment / Core"
+url="https://github.com/samwhelp/note-about-mabox/tree/gh-pages/_demo/project/mabox-adjustment"
+arch=('any')
+license=('MIT')
+makedepends=()
+depends=()
+conflicts=()
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+##
+## ## Source
+##
+## * https://github.com/samwhelp/note-about-mabox/tree/gh-pages/_demo/project/mabox-adjustment
+##
+## ## Note
+##
+## * https://samwhelp.github.io/note-about-mabox/read/project/mabox-adjustment/
+##
+
+source=("git+https://github.com/samwhelp/note-about-mabox.git")
+
+sha256sums=('SKIP')
+
+
+prepare () {
+
+	return 0
+
+	cp -af ../asset/. "${srcdir}"
+}
+
+
+package () {
+
+	##
+	## Path
+	##
+
+	#echo "${pkgdir}"
+	#echo "${srcdir}"
+
+	#local sys_etc_dir_path="${pkgdir}/etc"
+	#local sys_skel_dir_path="${sys_etc_dir_path}/skel"
+	local sys_share_dir_path="${pkgdir}/usr/share/"
+	#local target_share_dir_path="${sys_share_dir_path}/usr/share/${pkgname}"
+	local target_share_dir_path="${sys_share_dir_path}/usr/share/mabox-adjustment"
+
+
+	##
+	## Prepare Dir
+	##
+
+	## /usr/share/mabox-adjustment
+	##mkdir -p "${target_share_dir_path"
+	install -dm755 "${target_share_dir_path}"
+
+
+	##
+	## Main Content
+	##
+
+	## /usr/share/mabox-adjustment
+	cp -rf "${srcdir}/note-about-mabox/_demo/project/mabox-adjustment" "${pkgdir}/usr/share/mabox-adjustment"
+
+	## /usr/bin/mabox-adjust-ctrl
+	install -Dm755 "${srcdir}/note-about-mabox/_demo/project/mabox-adjustment/tool/mabox-adjust-ctrl/mabox-adjust-ctrl" "${pkgdir}/usr/bin/mabox-adjust-ctrl"
+
+
+	return 0
+}

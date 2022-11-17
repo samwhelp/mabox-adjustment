@@ -1,0 +1,21 @@
+
+##
+## ## Manjaro (Arch)
+## /usr/local/share/bash-completion/completions/mabox-tint2-theme-launcher
+## $ sudo install -Dm644 ./mabox-tint2-theme-launcher /usr/local/share/bash-completion/completions/mabox-tint2-theme-launcher
+##
+
+_mabox_tint2_theme_launcher () {
+
+	local cur prev words cword
+	_init_completion || return
+
+	if [ "$cword" = "1" ]; then
+		local action_list=$(DEBUG_MABOX_TINT2_THEME_LAUNCHER=false mabox-tint2-theme-launcher self_actions)
+		COMPREPLY=( $( compgen -W "$action_list" -- "$cur" ) )
+	fi
+
+	return 0
+}
+
+complete -F _mabox_tint2_theme_launcher mabox-tint2-theme-launcher

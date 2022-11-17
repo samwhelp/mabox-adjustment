@@ -1,0 +1,24 @@
+
+
+##
+## Modify xdg-open behaviour
+##
+
+export XDG_CURRENT_DESKTOP=XFCE
+
+
+##
+## QT_QPA_PLATFORMTHEME
+##
+
+#export QT_QPA_PLATFORMTHEME=qt5ct
+#export QT_QPA_PLATFORMTHEME=gtk2
+
+
+##
+## PATH
+##
+
+#export PATH=$HOME/bin:$PATH
+#export PATH=$HOME/openbox/bin:$HOME/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/openbox/bin:$PATH
