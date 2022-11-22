@@ -44,15 +44,15 @@ mod_mate_media_config_install () {
 	util_error_echo "mkdir -p ${HOME}/.config/autostart"
 	mkdir -p "${HOME}/.config/autostart"
 
-	util_error_echo "install -Dm644 ${THE_OVERLAY_DIR_PATH}/etc/skel/.config/autostart/mate-volume-control-status-icon.desktop ${HOME}/.config/autostart/mate-volume-control-status-icon.desktop"
-	install -Dm644 "${THE_OVERLAY_DIR_PATH}/etc/skel/.config/autostart/mate-volume-control-status-icon.desktop" "${HOME}/.config/autostart/mate-volume-control-status-icon.desktop"
+	util_error_echo "install -Dm644 ${THE_OVERLAY_DIR_PATH}/etc/skel/.config/autostart/mate-volume-control-status-icon-on-openbox.desktop ${HOME}/.config/autostart/mate-volume-control-status-icon-on-openbox.desktop"
+	install -Dm644 "${THE_OVERLAY_DIR_PATH}/etc/skel/.config/autostart/mate-volume-control-status-icon-on-openbox.desktop" "${HOME}/.config/autostart/mate-volume-control-status-icon-on-openbox.desktop"
 
 
 	util_error_echo
 	util_error_echo "## Check:"
 	util_error_echo
-	util_error_echo "grep '^OnlyShowIn' ${HOME}/.config/autostart/mate-volume-control-status-icon.desktop"
-	grep '^OnlyShowIn' "${HOME}/.config/autostart/mate-volume-control-status-icon.desktop"
+	util_error_echo "grep '^OnlyShowIn' ${HOME}/.config/autostart/mate-volume-control-status-icon-on-openbox.desktop"
+	grep '^OnlyShowIn' "${HOME}/.config/autostart/mate-volume-control-status-icon-on-openbox.desktop"
 
 }
 
