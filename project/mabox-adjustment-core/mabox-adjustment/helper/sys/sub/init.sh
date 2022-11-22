@@ -35,6 +35,7 @@ source "${THE_SUB_DIR_PATH}/xdg/ext/init.sh"
 source "${THE_SUB_DIR_PATH}/tool/ext/init.sh"
 source "${THE_SUB_DIR_PATH}/helper/ext/init.sh"
 source "${THE_SUB_DIR_PATH}/wallpaper/ext/init.sh"
+source "${THE_SUB_DIR_PATH}/mate-media/ext/init.sh"
 
 ##
 ### Tail: Func / Init

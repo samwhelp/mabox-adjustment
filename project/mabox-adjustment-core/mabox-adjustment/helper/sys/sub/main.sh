@@ -40,7 +40,7 @@ mod_main_package_list_find_for_install () {
 	mod_tool_package_list_find_for_install
 	mod_helper_package_list_find_for_install
 	mod_wallpaper_package_list_find_for_install
-
+	mod_mate_media_package_list_find_for_install
 
 	#mod_style_package_list_find_for_install
 
@@ -83,6 +83,7 @@ mod_main_config_install () {
 	mod_tool_config_install
 	mod_helper_config_install
 	mod_wallpaper_config_install
+	mod_mate_media_config_install
 
 
 	mod_style_config_install
@@ -129,6 +130,7 @@ mod_main_asset_install () {
 	mod_tool_asset_install
 	mod_helper_asset_install
 	mod_wallpaper_asset_install
+	mod_mate_media_asset_install
 
 
 	mod_style_asset_install
