@@ -1028,9 +1028,11 @@
         <action name="Unshade"/>
       </mousebind>
       <mousebind action="Drag" button="A-Left">
+        <action name="UnmaximizeFull"/>
         <action name="Move"/>
       </mousebind>
       <mousebind action="Drag" button="C-Left">
+        <action name="UnmaximizeFull"/>
         <action name="Move"/>
       </mousebind>
       <mousebind action="Press" button="A-Right">
@@ -1069,6 +1071,7 @@
     </context>
     <context name="Titlebar">
       <mousebind action="Drag" button="Left">
+        <action name="UnmaximizeFull"/>
         <action name="Move"/>
       </mousebind>
       <mousebind action="DoubleClick" button="Left">
