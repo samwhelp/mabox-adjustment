@@ -20,7 +20,12 @@ wget -c 'https://sourceforge.net/projects/mabox-linux/files/22.12/mabox-linux-22
 
 ## mabox / adjustment / mousebind
 
+> Drag window to move, when window maximized.
+
+
 ### context Titlebar / orginal
+
+* [config snippet](asset/orginal/rc.xml#L1071-L1073)
 
 ``` xml
   <mouse>
@@ -34,6 +39,8 @@ wget -c 'https://sourceforge.net/projects/mabox-linux/files/22.12/mabox-linux-22
 
 ### context Titlebar / adjust
 
+* [config snippet](rc.xml#L1073-L1076)
+
 ``` xml
   <mouse>
     <context name="Titlebar">
@@ -45,7 +52,12 @@ wget -c 'https://sourceforge.net/projects/mabox-linux/files/22.12/mabox-linux-22
   </mouse>
 ```
 
+
+
+
 ### context Frame / orginal
+
+* [config snippet](asset/orginal/rc.xml#L1030-L1035)
 
 ``` xml
   <mouse>
@@ -59,10 +71,11 @@ wget -c 'https://sourceforge.net/projects/mabox-linux/files/22.12/mabox-linux-22
     </context>
   </mouse>
 ```
-
 
 ### context Frame / adjust
 
+* [config snippet](rc.xml#L1030-L1037)
+
 ``` xml
   <mouse>
     <context name="Frame">
@@ -77,5 +90,3 @@ wget -c 'https://sourceforge.net/projects/mabox-linux/files/22.12/mabox-linux-22
     </context>
   </mouse>
 ```
-
-
