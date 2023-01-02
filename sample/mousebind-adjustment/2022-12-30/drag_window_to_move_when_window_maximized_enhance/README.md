@@ -39,14 +39,26 @@ wget -c 'https://sourceforge.net/projects/mabox-linux/files/22.12/mabox-linux-22
 
 ### context Titlebar / adjust
 
-* [config snippet](rc.xml#L1064-L1067)
+* [config snippet](rc.xml#L1076-L1091)
 
 ``` xml
   <mouse>
     <context name="Titlebar">
       <mousebind action="Drag" button="Left">
-        <action name="UnmaximizeFull"/>
-        <action name="Move"/>
+        <action name="if">
+          <maximized>yes</maximized>
+          <then>
+            <action name="UnmaximizeFull"/>
+            <action name="MoveResizeTo">
+              <x>center</x>
+              <y>current</y>
+            </action>
+            <action name="Move"/>
+          </then>
+          <else>
+            <action name="Move"/>
+          </else>
+        </action>
       </mousebind>
     </context>
   </mouse>
@@ -71,14 +83,26 @@ wget -c 'https://sourceforge.net/projects/mabox-linux/files/22.12/mabox-linux-22
 
 ### context Frame / adjust
 
-* [config snippet](rc.xml#L1025-L1028)
+* [config snippet](rc.xml#L1025-L1040)
 
 ``` xml
   <mouse>
     <context name="Frame">
       <mousebind action="Drag" button="A-Left">
-        <action name="UnmaximizeFull"/>
-        <action name="Move"/>
+        <action name="if">
+          <maximized>yes</maximized>
+          <then>
+            <action name="UnmaximizeFull"/>
+            <action name="MoveResizeTo">
+              <x>center</x>
+              <y>current</y>
+            </action>
+            <action name="Move"/>
+          </then>
+          <else>
+            <action name="Move"/>
+          </else>
+        </action>
       </mousebind>
     </context>
   </mouse>
@@ -87,4 +111,6 @@ wget -c 'https://sourceforge.net/projects/mabox-linux/files/22.12/mabox-linux-22
 
 ## Link
 
+* archcraft-openbox / [rc.xml](https://github.com/archcraft-os/archcraft-openbox/blob/main/files/rc.xml#L804-L820)
+* note-about-opnebox / [drag_window_to_move_when_window_maximized_enhance](https://github.com/samwhelp/note-about-openbox/tree/gh-pages/_demo/sample/mousebind-adjustment/openbox/3.6.1/drag_window_to_move_when_window_maximized_enhance)
 * note-about-openbox / [drag_window_to_move_when_window_maximized](https://github.com/samwhelp/note-about-openbox/tree/gh-pages/_demo/sample/mousebind-adjustment/openbox/3.6.1/drag_window_to_move_when_window_maximized)
