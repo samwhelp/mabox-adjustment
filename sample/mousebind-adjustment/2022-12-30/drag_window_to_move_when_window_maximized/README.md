@@ -88,3 +88,4 @@ wget -c 'https://sourceforge.net/projects/mabox-linux/files/22.12/mabox-linux-22
 ## Link
 
 * note-about-openbox / [drag_window_to_move_when_window_maximized](https://github.com/samwhelp/note-about-openbox/tree/gh-pages/_demo/sample/mousebind-adjustment/openbox/3.6.1/drag_window_to_move_when_window_maximized)
+* mabox / [[about mabox mousebind] Drag window to move, when window maximized.](https://github.com/napcok/clicksnap/issues/2)
