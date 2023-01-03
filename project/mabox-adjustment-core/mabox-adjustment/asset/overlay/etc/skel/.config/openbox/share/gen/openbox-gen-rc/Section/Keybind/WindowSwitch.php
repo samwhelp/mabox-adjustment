@@ -150,6 +150,16 @@ h l
 		</action>
 	</keybind>
 	
+	<keybind key="W-grave">
+		<action name="PreviousWindow">
+			<finalactions>
+				<action name="Focus"/>
+				<action name="Raise"/>
+				<action name="Unshade"/>
+			</finalactions>
+		</action>
+	</keybind>
+
 	<keybind key="W-S-Tab">
 		<action name="PreviousWindow">
 			<finalactions>
@@ -179,6 +189,16 @@ h l
 	<!-- Alt + Tab //-->
 	<keybind key="A-Tab">
 		<action name="NextWindow">
+			<finalactions>
+				<action name="Focus"/>
+				<action name="Raise"/>
+				<action name="Unshade"/>
+			</finalactions>
+		</action>
+	</keybind>
+
+	<keybind key="A-grave">
+		<action name="PreviousWindow">
 			<finalactions>
 				<action name="Focus"/>
 				<action name="Raise"/>
