@@ -50,6 +50,20 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 		</mousebind>
 //-->
 
+		<mousebind action="Press" button="C-S-Left">
+			<action name="UnmaximizeFull"/>
+			<action name="Execute">
+				<command>snapwin</command>
+			</action>
+		</mousebind>
+
+		<mousebind action="Press" button="W-Left">
+			<action name="UnmaximizeFull"/>
+			<action name="Execute">
+				<command>deskgrid</command>
+			</action>
+		</mousebind>
+
 		<mousebind button="W-Left" action="Press">
 			<action name="Focus"/>
 			<action name="Raise"/>
