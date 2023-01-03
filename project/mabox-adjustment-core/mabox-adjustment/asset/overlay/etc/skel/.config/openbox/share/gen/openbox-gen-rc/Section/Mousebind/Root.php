@@ -9,13 +9,13 @@
 
 		<!-- Menus -->
 		<!-- Mouse Button Middle Click //-->
-		<!--
-		<mousebind button="Middle" action="Press">
+
+		<mousebind button="A-Middle" action="Press">
 			<action name="ShowMenu">
 				<menu>client-list-combined-menu</menu>
 			</action>
 		</mousebind>
-		//-->
+
 		<mousebind button="Middle" action="Press">
 			<action name="Execute">
 				<command>jgdesktops -s</command>
@@ -23,13 +23,13 @@
 		</mousebind>
 
 		<!-- Mouse Button Right Click //-->
-		<!--
-		<mousebind button="Right" action="Press">
+
+		<mousebind button="A-Right" action="Press">
 			<action name="ShowMenu">
 				<menu>root-menu</menu>
 			</action>
 		</mousebind>
-		//-->
+
 		<mousebind button="Right" action="Press">
 			<action name="Execute">
 				<command>mb-jgtools main</command>

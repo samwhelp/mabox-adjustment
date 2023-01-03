@@ -1,12 +1,12 @@
 
 
-	<!--
-	<keybind key="W-space">
+
+	<keybind key="W-A-space">
 		<action name="ShowMenu">
 			<menu>root-menu</menu>
 		</action>
 	</keybind>
-
+	<!--
 	<keybind key="Alt-F1">
 		<action name="ShowMenu">
 			<menu>root-menu</menu>

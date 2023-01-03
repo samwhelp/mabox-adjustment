@@ -1,12 +1,12 @@
 
 
-	<!--
-	<keybind key="W-c">
+
+	<keybind key="W-A-c">
 		<action name="ShowMenu">
 			<menu>client-list-combined-menu</menu>
 		</action>
 	</keybind>
-	
+	<!--
 	<keybind key="Alt-F3">
 		<action name="ShowMenu">
 			<menu>client-list-combined-menu</menu>

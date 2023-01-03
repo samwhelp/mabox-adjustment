@@ -62,8 +62,21 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 		//-->
 
 		<mousebind button="W-Left" action="Drag">
-			<action name="UnmaximizeFull"/>
-			<action name="Move"/>
+			<action name="if">
+				<maximized>yes</maximized>
+				<then>
+					<action name="UnmaximizeFull"/>
+					<action name="MoveResizeTo">
+						<x>center</x>
+						<y>current</y>
+					</action>
+					<action name="Move"/>
+				</then>
+				<else>
+					<!-- <action name="UnmaximizeFull"/> //-->
+					<action name="Move"/>
+				</else>
+			</action>
 		</mousebind>
 
 		<!--
@@ -75,7 +88,7 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 		//-->
 
 		<mousebind button="W-Right" action="Drag">
-			<action name="UnmaximizeFull"/>
+			<!-- <action name="UnmaximizeFull"/> //-->
 			<action name="Resize"/>
 		</mousebind>
 

@@ -78,6 +78,7 @@ h l
 
 
 	<!-- For [1-10] //-->
+	<!--
 	<keybind key="A-1">
 		<action name="GoToDesktop">
 			<to>1</to>
@@ -133,6 +134,68 @@ h l
 	</keybind>
 
 	<keybind key="A-0">
+		<action name="GoToDesktop">
+			<to>10</to>
+		</action>
+	</keybind>
+	//-->
+
+	<!-- For [1-10] //-->
+	<keybind key="A-C-1">
+		<action name="GoToDesktop">
+			<to>1</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-C-2">
+		<action name="GoToDesktop">
+			<to>2</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-C-3">
+		<action name="GoToDesktop">
+			<to>3</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-C-4">
+		<action name="GoToDesktop">
+			<to>4</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-C-5">
+		<action name="GoToDesktop">
+			<to>5</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-C-6">
+		<action name="GoToDesktop">
+			<to>6</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-C-7">
+		<action name="GoToDesktop">
+			<to>7</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-C-8">
+		<action name="GoToDesktop">
+			<to>8</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-C-9">
+		<action name="GoToDesktop">
+			<to>9</to>
+		</action>
+	</keybind>
+
+	<keybind key="A-C-0">
 		<action name="GoToDesktop">
 			<to>10</to>
 		</action>
