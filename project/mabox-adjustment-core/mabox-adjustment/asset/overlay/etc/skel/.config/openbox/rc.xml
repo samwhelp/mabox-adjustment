@@ -2398,8 +2398,28 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 				</then>
 			</action>
 		</mousebind>
-
 		<mousebind button="Down" action="Click">
+			<action name="if">
+				<shaded>yes</shaded>
+				<then>
+					<action name="Unshade"/>
+					<action name="Raise"/>
+				</then>
+			</action>
+		</mousebind>
+
+		<mousebind button="W-Up" action="Click">
+			<action name="if">
+				<shaded>no</shaded>
+				<then>
+					<action name="Shade"/>
+					<action name="FocusToBottom"/>
+					<action name="Unfocus"/>
+					<action name="Lower"/>
+				</then>
+			</action>
+		</mousebind>
+		<mousebind button="W-Down" action="Click">
 			<action name="if">
 				<shaded>yes</shaded>
 				<then>
