@@ -677,6 +677,7 @@ h l
 	</keybind>
 
 
+
 	<!-- For Left Hand //-->
 	<keybind key="W-A-a">
 		<action name="SendToDesktop">
@@ -863,6 +864,7 @@ h l
 	</keybind>
 	//-->
 
+
 	<!-- For [1-10] //-->
 	<keybind key="A-S-1">
 		<action name="SendToDesktop">
@@ -923,6 +925,7 @@ h l
 			<to>10</to>
 		</action>
 	</keybind>
+
 
 
 
