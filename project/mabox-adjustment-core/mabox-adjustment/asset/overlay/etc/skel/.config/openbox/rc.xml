@@ -2260,7 +2260,7 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 			</action>
 		</mousebind>
 
-		<mousebind action="Press" button="W-Left">
+		<mousebind action="Press" button="A-S-Left">
 			<action name="UnmaximizeFull"/>
 			<action name="Execute">
 				<command>deskgrid</command>
