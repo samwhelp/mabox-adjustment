@@ -738,7 +738,6 @@ h l
 
 
 	<!-- For [1-10] //-->
-	<!--
 	<keybind key="W-A-1">
 		<action name="SendToDesktop">
 			<to>1</to>
@@ -798,7 +797,6 @@ h l
 			<to>10</to>
 		</action>
 	</keybind>
-	//-->
 
 
 	<!-- Simple For [1-10] //-->
