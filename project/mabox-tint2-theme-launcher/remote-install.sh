@@ -5,10 +5,10 @@
 ##
 
 ##
-## * https://github.com/samwhelp/note-about-mabox/blob/gh-pages/_demo/project/mabox-tint2-theme-launcher/remote-install.sh
-## * https://raw.githubusercontent.com/samwhelp/note-about-mabox/gh-pages/_demo/project/mabox-tint2-theme-launcher/remote-install.sh
-## * https://github.com/samwhelp/note-about-mabox/blob/gh-pages/_demo/project/mabox-tint2-theme-launcher/mabox-tint2-theme-launcher
-## * https://raw.githubusercontent.com/samwhelp/note-about-mabox/gh-pages/_demo/project/mabox-tint2-theme-launcher/mabox-tint2-theme-launcher
+## * https://github.com/samwhelp/mabox-adjustment/blob/main/project/mabox-tint2-theme-launcher/remote-install.sh
+## * https://raw.githubusercontent.com/samwhelp/mabox-adjustment/main/project/mabox-tint2-theme-launcher/remote-install.sh
+## * https://github.com/samwhelp/mabox-adjustment/blob/main/project/mabox-tint2-theme-launcher/mabox-tint2-theme-launcher
+## * https://raw.githubusercontent.com/samwhelp/mabox-adjustment/main/project/mabox-tint2-theme-launcher/mabox-tint2-theme-launcher
 ##
 
 ##
@@ -94,8 +94,8 @@ base_var_init () {
 
 
 	## Target
-	## https://github.com/samwhelp/note-about-mabox/blob/gh-pages/_demo/project/mabox-tint2-theme-launcher/mabox-tint2-theme-launcher
-	THE_TARGET_DOWNLOAD_URL='https://raw.githubusercontent.com/samwhelp/note-about-mabox/gh-pages/_demo/project/mabox-tint2-theme-launcher/mabox-tint2-theme-launcher'
+	## https://github.com/samwhelp/mabox-adjustment/blob/main/project/mabox-tint2-theme-launcher/mabox-tint2-theme-launcher
+	THE_TARGET_DOWNLOAD_URL='https://raw.githubusercontent.com/samwhelp/mabox-adjustment/main/project/mabox-tint2-theme-launcher/mabox-tint2-theme-launcher'
 
 
 	THE_TARGET_FILE_NAME="mabox-tint2-theme-launcher"
