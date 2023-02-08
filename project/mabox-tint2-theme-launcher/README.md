@@ -86,6 +86,13 @@ gruvbox-top-panel
 
 > list [[~/.config/tint2/themes](https://github.com/samwhelp/mabox-adjustment/tree/main/project/mabox-adjustment-core/mabox-adjustment/asset/overlay/etc/skel/.config/tint2/themes)]
 
+| theme |
+| --- |
+| [gruvbox-top-panel](https://github.com/samwhelp/mabox-adjustment/tree/main/project/mabox-adjustment-core/mabox-adjustment/asset/overlay/etc/skel/.config/tint2/themes/gruvbox-top-panel) |
+| [gruvbox-bottom-panel](https://github.com/samwhelp/mabox-adjustment/tree/main/project/mabox-adjustment-core/mabox-adjustment/asset/overlay/etc/skel/.config/tint2/themes/gruvbox-top-bottom-panel) |
+| [gruvbox-top-bottom-panel](https://github.com/samwhelp/mabox-adjustment/tree/main/project/mabox-adjustment-core/mabox-adjustment/asset/overlay/etc/skel/.config/tint2/themes/gruvbox-top-bottom-panel) |
+
+
 then run
 
 ``` sh
