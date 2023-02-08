@@ -33,7 +33,7 @@ chmod 755 "$HOME/.local/bin/mabox-tint2-theme-launcher"
 Or Run
 
 ``` sh
-curl -fsSL 'https://github.com/samwhelp/mabox-adjustment/blob/main/project/mabox-tint2-theme-launcher/remote-install.sh' | bash
+curl -fsSL 'https://raw.githubusercontent.com/samwhelp/mabox-adjustment/main/project/mabox-tint2-theme-launcher/remote-install.sh' | bash
 ```
 
 Or Run
