@@ -24,6 +24,13 @@
 | [tint2 (my remix)](https://github.com/samwhelp/mabox-adjustment/tree/main/project/mabox-adjustment-core/mabox-adjustment/asset/overlay/etc/skel/.config/tint2/themes)| [tint2 (mabox)](https://git.maboxlinux.org/Mabox/iso-profiles/src/branch/master/mabox-linux/desktop-overlay/etc/skel/.config/tint2) |
 
 
+## Keybind
+
+| Keybind |
+| --- |
+| [Quick Start](https://samwhelp.github.io/system-modeling/read/en_us/quick-start) |
+
+
 ## Issue
 
 * [[about mabox mousebind] Drag window to move, when window maximized](https://github.com/napcok/clicksnap/issues/2)
