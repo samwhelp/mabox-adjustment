@@ -30,6 +30,7 @@
 		<directories/>
 		<text-files/>
 	</action>
+<!--
 	<action>
 		<icon>Terminal</icon>
 		<name>Xftt</name>
@@ -85,6 +86,7 @@
 		<patterns>*</patterns>
 		<image-files/>
 	</action>
+//-->
 	<action>
 		<icon>stock_folder</icon>
 		<name>Thunar Root</name>
