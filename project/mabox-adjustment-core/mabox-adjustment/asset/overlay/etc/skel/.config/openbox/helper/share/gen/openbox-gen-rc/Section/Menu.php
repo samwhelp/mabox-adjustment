@@ -6,8 +6,11 @@
 	//-->
 	<!-- default menu file (or custom one in $HOME/.config/openbox/) //-->
 	<!-- system menu files on Debian systems //-->
-	<file>/var/lib/openbox/debian-menu.xml</file>
-	<file>menu.xml</file>
+	<!-- <file>/var/lib/openbox/debian-menu.xml</file> //-->
+	<!-- Lubuntu specific : Default menu of Lubuntu -->
+	<!-- <file>/usr/share/lubuntu/openbox/menu.xml</file> //-->
+	<!-- <file>menu.xml</file> //-->
+	<file>menu-icons.xml</file>
 	<hideDelay>200</hideDelay>
 	<!--
 		if a press-release lasts longer than this setting (in milliseconds),

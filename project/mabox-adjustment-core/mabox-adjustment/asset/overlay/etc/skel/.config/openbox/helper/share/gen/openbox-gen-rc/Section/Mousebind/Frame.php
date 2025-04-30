@@ -27,7 +27,6 @@ chmod 755 clicksnap
 sudo cp clicksnap /usr/local/bin/clicksnap
 ```
 
-
 ## Mousebind
 
 | Setting                                      | Mousebind                  |
@@ -41,28 +40,33 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 
 //-->
 
-<!--
+		<!--
 		<mousebind action="Press" button="A-Left">
 			<action name="UnmaximizeFull"/>
 			<action name="Execute">
 				<command>clicksnap</command>
 			</action>
 		</mousebind>
-//-->
+		//-->
 
+		<!--
 		<mousebind action="Press" button="C-S-Left">
 			<action name="UnmaximizeFull"/>
 			<action name="Execute">
 				<command>snapwin</command>
 			</action>
 		</mousebind>
+		//-->
 
+		<!--
 		<mousebind action="Press" button="W-S-Left">
 			<action name="UnmaximizeFull"/>
 			<action name="Execute">
 				<command>deskgrid</command>
 			</action>
 		</mousebind>
+		//-->
+
 
 		<mousebind button="W-Left" action="Press">
 			<action name="Focus"/>
@@ -106,11 +110,28 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 			<action name="Resize"/>
 		</mousebind>
 
+		<mousebind button="W-Middle" action="Click">
+			<action name="Focus"/>
+			<action name="Raise"/>
+			<action name="ShowMenu">
+				<menu>client-menu</menu>
+			</action>
+		</mousebind>
+
+		<mousebind button="A-Middle" action="Press">
+			<action name="Lower"/>
+			<action name="FocusToBottom"/>
+			<action name="Unfocus"/>
+		</mousebind>
+
+		<!--
 		<mousebind button="W-Middle" action="Press">
 			<action name="Lower"/>
 			<action name="FocusToBottom"/>
 			<action name="Unfocus"/>
 		</mousebind>
+		//-->
+
 
 
 

@@ -1,18 +1,27 @@
 
 
-
-	<keybind key="W-A-c">
+	<!--
+	<keybind key="W-c">
 		<action name="ShowMenu">
 			<menu>client-list-combined-menu</menu>
 		</action>
 	</keybind>
-	<!--
+
 	<keybind key="Alt-F3">
 		<action name="ShowMenu">
 			<menu>client-list-combined-menu</menu>
 		</action>
 	</keybind>
 	//-->
+
+
+
+
+	<keybind key="W-A-c">
+		<action name="ShowMenu">
+			<menu>client-list-combined-menu</menu>
+		</action>
+	</keybind>
 
 	<keybind key="W-c">
 		<action name="Execute">
@@ -25,6 +34,9 @@
 			<command>jgdesktops -s</command>
 		</action>
 	</keybind>
+
+
+
 
 <?php
 /*

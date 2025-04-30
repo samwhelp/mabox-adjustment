@@ -14,6 +14,7 @@
 <?php include_once(__DIR__ . '/Keybind/WorkspaceSwitch.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/WindowMoveToWorkspace.php'); ?>
 
+<?php include_once(__DIR__ . '/Keybind/Overview.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/WindowSwitch.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/WindowFocusSwitch.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/WindowRaiseLower.php'); ?>
@@ -32,16 +33,23 @@
 <?php include_once(__DIR__ . '/Keybind/WindowBeginMove.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/WindowBeginResize.php'); ?>
 
-<?php include_once(__DIR__ . '/Keybind/WindowTiling.php'); ?>
+<?php //include_once(__DIR__ . '/Keybind/WindowTiling.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/WindowTilingMoveSide.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/WindowTilingMoveCorner.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/WindowMoveToCenter.php'); ?>
 
+<?php include_once(__DIR__ . '/Keybind/ApplicationLaunchRunDialog.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/ApplicationLaunchRofi.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/ApplicationLaunchTerminal.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/ApplicationLaunchFavorite.php'); ?>
 
+<?php include_once(__DIR__ . '/Keybind/ApplicationFocusFn.php'); ?>
+<?php //include_once(__DIR__ . '/Keybind/ApplicationFocusTerminal.php'); ?>
+<?php //include_once(__DIR__ . '/Keybind/ApplicationFocusFavorite.php'); ?>
+
 <?php include_once(__DIR__ . '/Keybind/Volume.php'); ?>
+
+<?php include_once(__DIR__ . '/Keybind/MonitorBrightness.php'); ?>
 
 <?php include_once(__DIR__ . '/Keybind/Screenshot.php'); ?>
 

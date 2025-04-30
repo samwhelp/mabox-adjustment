@@ -104,6 +104,10 @@ h l
 	</keybind>
 	//-->
 
+
+
+
+	<!--
 	<keybind key="A-Down">
 		<action name="NextWindow">
 			<finalactions>
@@ -113,6 +117,9 @@ h l
 			</finalactions>
 		</action>
 	</keybind>
+	//-->
+
+
 
 
 	<!-- Alt+Left, Alt+Right //-->
@@ -149,7 +156,7 @@ h l
 			</finalactions>
 		</action>
 	</keybind>
-	
+
 	<keybind key="W-grave">
 		<action name="PreviousWindow">
 			<finalactions>
@@ -180,7 +187,7 @@ h l
 				<action name="Unshade"/>
 			</finalactions>
 		</action>
-	</keybind>	
+	</keybind>
 
 
 

@@ -20,9 +20,11 @@
 			</action>
 		</mousebind>
 
+
 		<mousebind button="Left" action="DoubleClick">
 			<action name="ToggleMaximize"/>
 		</mousebind>
+
 
 		<mousebind button="Up" action="Click">
 			<action name="if">
@@ -37,6 +39,7 @@
 				</then>
 			</action>
 		</mousebind>
+
 		<mousebind button="Down" action="Click">
 			<action name="if">
 				<shaded>yes</shaded>
@@ -46,6 +49,7 @@
 				</then>
 			</action>
 		</mousebind>
+
 
 		<mousebind button="W-Up" action="Click">
 			<action name="if">
@@ -58,6 +62,7 @@
 				</then>
 			</action>
 		</mousebind>
+
 		<mousebind button="W-Down" action="Click">
 			<action name="if">
 				<shaded>yes</shaded>

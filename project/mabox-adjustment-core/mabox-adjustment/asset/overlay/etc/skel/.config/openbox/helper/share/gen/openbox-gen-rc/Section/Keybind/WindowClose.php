@@ -4,11 +4,9 @@
 		<action name="Close"/>
 	</keybind>
 
-	<!--
 	<keybind key="A-F4">
 		<action name="Close"/>
 	</keybind>
-	//-->
 
 	<keybind key="A-S-q">
 		<action name="Close"/>

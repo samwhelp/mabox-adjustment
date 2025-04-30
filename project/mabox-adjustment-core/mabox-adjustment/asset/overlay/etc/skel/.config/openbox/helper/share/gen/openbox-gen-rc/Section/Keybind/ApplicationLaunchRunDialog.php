@@ -1,60 +1,36 @@
 
 
-	<!-- ## File Manager //-->
-	<keybind key="A-S-f">
+	<keybind key="Alt-F1">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>FileManager</name>
+				<name>AppLauncher</name>
 			</startupnotify>
-			<command>pcmanfm</command>
-		</action>
-	</keybind>
-
-	<keybind key="A-S-g">
-		<action name="Execute">
-			<startupnotify>
-				<enabled>true</enabled>
-				<name>Files</name>
-			</startupnotify>
-			<command>thunar</command>
+			<command>mb-jgtools main ipc</command>
 		</action>
 	</keybind>
 
 
-	<!-- ## Web Browser //-->
-	<keybind key="A-S-b">
+	<keybind key="Alt-F2">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>WebBrowser</name>
+				<name>RunDialog</name>
 			</startupnotify>
-			<command>firefox --new-tab about:blank</command>
+			<command>gmrun</command>
 		</action>
 	</keybind>
 
-
-	<!-- ## Text Editor //-->
-	<keybind key="A-S-e">
-		<action name="Execute">
-			<startupnotify>
-				<enabled>true</enabled>
-				<name>TextEditor</name>
-			</startupnotify>
-			<command>geany</command>
-		</action>
-	</keybind>
 
 <?php
 /*
-	<!-- ## Text Editor //-->
-	<keybind key="A-S-e">
+	<keybind key="Alt-F2">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>TextEditor</name>
+				<name>RunDialog</name>
 			</startupnotify>
-			<command>featherpad</command>
+			<command>rofi -show drun -show-icons</command>
 		</action>
 	</keybind>
 */
@@ -63,14 +39,38 @@
 
 <?php
 /*
-	<!-- ## Text Editor //-->
-	<keybind key="A-S-e">
+
+	// https://wiki.archlinux.org/title/Compiz
+
+
+	<keybind key="Alt-F2">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>TextEditor</name>
+				<name>RunDialog</name>
 			</startupnotify>
-			<command>mousepad</command>
+			<command>mate-panel --run-dialog</command>
+		</action>
+	</keybind>
+
+
+	<keybind key="Alt-F2">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>RunDialog</name>
+			</startupnotify>
+			<command>lxpanelctl run</command>
+		</action>
+	</keybind>
+
+	<keybind key="Alt-F2">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>RunDialog</name>
+			</startupnotify>
+			<command>xfce4-appfinder --collapsed</command>
 		</action>
 	</keybind>
 */

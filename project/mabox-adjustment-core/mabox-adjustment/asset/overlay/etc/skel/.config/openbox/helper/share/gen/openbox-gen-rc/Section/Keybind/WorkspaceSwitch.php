@@ -77,7 +77,7 @@ h l
 	</keybind>
 
 
-	<!-- For [1-10] //-->
+	<!-- For Simple [1-10] //-->
 	<!--
 	<keybind key="A-1">
 		<action name="GoToDesktop">
@@ -140,6 +140,7 @@ h l
 	</keybind>
 	//-->
 
+
 	<!-- For [1-10] //-->
 	<keybind key="A-C-1">
 		<action name="GoToDesktop">
@@ -200,6 +201,7 @@ h l
 			<to>10</to>
 		</action>
 	</keybind>
+
 
 <?php
 /*

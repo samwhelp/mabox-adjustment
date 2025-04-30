@@ -1,29 +1,50 @@
 
 
-	<!-- ## Launch Mabox Control Center //-->
-	<keybind key="W-S-s">
+	<!-- ## Launch Appearance Settings //-->
+	<keybind key="A-S-s">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>Mabox Control Center</name>
+				<name>AppearanceSettings</name>
 			</startupnotify>
-			<command>mcc</command>
+			<command>lxappearance</command>
 		</action>
 	</keybind>
 
+
+
+
 	<!-- ## Launch Theme Manager //-->
-	<keybind key="W-C-s">
+	<keybind key="A-C-s">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>Mabox Theme Manager</name>
+				<name>ThemeManager</name>
 			</startupnotify>
 			<command>mb-obthemes</command>
 		</action>
 	</keybind>
 
+
+
+
+	<!--
+	<keybind key="C-Escape">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>Lxqt / Process Manager</name>
+			</startupnotify>
+			<command>qps</command>
+		</action>
+	</keybind>
+	//-->
+
+
+
+
 	<!-- ## Launch obconf //-->
-	<keybind key="A-S-s">
+	<keybind key="W-S-s">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
@@ -34,18 +55,29 @@
 	</keybind>
 
 
-	<!-- ## Launch xfce4-appearance-settings //-->
-	<keybind key="A-C-s">
+
+
+<?php
+/*
+	<!-- ## Launch obconf-qt //-->
+	<keybind key="W-S-s">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>Appearance</name>
+				<name>Openbox Configuration Manager</name>
 			</startupnotify>
-			<command>lxappearance</command>
+			<command>obconf-qt</command>
 		</action>
 	</keybind>
+*/
+?>
+
+
+
+
 <?php
 /*
+	<!-- ## Launch xfce4-appearance-settings //-->
 	<keybind key="A-C-s">
 		<action name="Execute">
 			<startupnotify>
@@ -57,5 +89,3 @@
 	</keybind>
 */
 ?>
-
-

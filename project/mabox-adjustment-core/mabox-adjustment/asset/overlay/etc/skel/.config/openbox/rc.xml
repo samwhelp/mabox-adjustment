@@ -60,8 +60,9 @@
 
 
 <theme>
-	<name>gruvbox-mabox</name>
+	<name>MBcolors</name>
 	<titleLayout>NLIMC</titleLayout>
+	<!-- <titleLayout>NDSLIMC</titleLayout> //-->
 	<!--
 		available characters are NDSLIMC, each can occur at most once.
 		N: window icon
@@ -85,7 +86,7 @@
 	</font>
 	<font place="InactiveWindow">
 		<name>sans</name>
-		<size>9</size>
+		<size>10</size>
 		<!-- font size in points //-->
 		<weight>bold</weight>
 		<!-- 'bold' or 'normal' //-->
@@ -94,7 +95,7 @@
 	</font>
 	<font place="MenuHeader">
 		<name>sans</name>
-		<size>9</size>
+		<size>11</size>
 		<!-- font size in points //-->
 		<weight>normal</weight>
 		<!-- 'bold' or 'normal' //-->
@@ -103,7 +104,7 @@
 	</font>
 	<font place="MenuItem">
 		<name>sans</name>
-		<size>11</size>
+		<size>10</size>
 		<!-- font size in points //-->
 		<weight>normal</weight>
 		<!-- 'bold' or 'normal' //-->
@@ -112,7 +113,7 @@
 	</font>
 	<font place="ActiveOnScreenDisplay">
 		<name>sans</name>
-		<size>14</size>
+		<size>11</size>
 		<!-- font size in points //-->
 		<weight>bold</weight>
 		<!-- 'bold' or 'normal' //-->
@@ -121,7 +122,7 @@
 	</font>
 	<font place="InactiveOnScreenDisplay">
 		<name>sans</name>
-		<size>11</size>
+		<size>10</size>
 		<!-- font size in points //-->
 		<weight>bold</weight>
 		<!-- 'bold' or 'normal' //-->
@@ -209,13 +210,15 @@
 
 
 
-<!-- for top_bottom_panel //-->
+<!-- for top_bottom_panel
 <margins>
-	<top>50</top>
-	<bottom>50</bottom>
-	<left>10</left>
-	<right>10</right>
+	<top>48</top>
+	<bottom>48</bottom>
+	<left>8</left>
+	<right>8</right>
 </margins>
+//-->
+
 
 <!-- for top_panel
 <margins>
@@ -226,14 +229,15 @@
 </margins>
 //-->
 
-<!-- for bottom_panel
+
+<!-- for bottom_panel //-->
 <margins>
 	<top>8</top>
 	<bottom>48</bottom>
 	<left>8</left>
 	<right>8</right>
 </margins>
-//-->
+
 
 <!--
 <margins>
@@ -279,80 +283,113 @@
 
 
 
-	<!-- ## Screen Lock //-->
-	<keybind key="A-S-z">
-		<action name="Execute">
-			<command>mbscreenlocker</command>
-		</action>
-	</keybind>
-
-	<keybind key="A-C-z">
-		<action name="Execute">
-			<command>jglockscreen -s</command>
-		</action>
-	</keybind>
-
-	<!-- ## Logout //-->
-	<keybind key="A-C-x">
-		<action name="Exit" />
-	</keybind>
-	<!--
-	<keybind key="A-S-x">
-		<action name="Exit" />
-	</keybind>
-
-	<keybind key="C-A-Delete">
-		<action name="Exit" />
-	</keybind>
-	//-->
-	<keybind key="A-S-x">
-		<action name="Execute">
-			<command>mb-jgtools mblogout</command>
-		</action>
-	</keybind>
-
-	<keybind key="C-A-Delete">
-		<action name="Execute">
-			<command>mb-jgtools mblogout</command>
-		</action>
-	</keybind>
-
 	<!-- ## Reconfigure //-->
 	<keybind key="A-S-c">
 		<action name="Reconfigure" />
 	</keybind>
 
-	<!-- ## Restart //-->
-	<keybind key="A-C-c">
-		<action name="Restart" />
-	</keybind>
 
 
 
-	<!-- ## Launch Mabox Control Center //-->
-	<keybind key="W-S-s">
+	<!-- ## Logout //-->
+	<keybind key="A-S-x">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>Mabox Control Center</name>
+				<name>Logout</name>
 			</startupnotify>
-			<command>mcc</command>
+			<command>mb-jgtools mblogout</command>
 		</action>
 	</keybind>
 
-	<!-- ## Launch Theme Manager //-->
-	<keybind key="W-C-s">
+
+	<!-- ## Logout (Openbox) //-->
+	<keybind key="A-C-x">
+		<action name="Exit" />
+	</keybind>
+
+	<keybind key="C-A-Delete">
+		<action name="Exit" />
+	</keybind>
+
+
+
+
+
+
+	<!-- ## Leave //-->
+	<keybind key="A-S-z">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>Mabox Theme Manager</name>
+				<name>Leave</name>
+			</startupnotify>
+			<command>mb-jgtools mblogout</command>
+		</action>
+	</keybind>
+
+
+	<!-- ## Lock Screen //-->
+	<keybind key="A-C-z">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>LockScreen</name>
+			</startupnotify>
+			<command>betterlockscreen -l dim</command>
+		</action>
+	</keybind>
+
+
+
+
+
+
+	<!-- ## Launch Appearance Settings //-->
+	<keybind key="A-S-s">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>AppearanceSettings</name>
+			</startupnotify>
+			<command>lxappearance</command>
+		</action>
+	</keybind>
+
+
+
+
+	<!-- ## Launch Theme Manager //-->
+	<keybind key="A-C-s">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>ThemeManager</name>
 			</startupnotify>
 			<command>mb-obthemes</command>
 		</action>
 	</keybind>
 
+
+
+
+	<!--
+	<keybind key="C-Escape">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>Lxqt / Process Manager</name>
+			</startupnotify>
+			<command>qps</command>
+		</action>
+	</keybind>
+	//-->
+
+
+
+
 	<!-- ## Launch obconf //-->
-	<keybind key="A-S-s">
+	<keybind key="W-S-s">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
@@ -363,16 +400,10 @@
 	</keybind>
 
 
-	<!-- ## Launch xfce4-appearance-settings //-->
-	<keybind key="A-C-s">
-		<action name="Execute">
-			<startupnotify>
-				<enabled>true</enabled>
-				<name>Appearance</name>
-			</startupnotify>
-			<command>lxappearance</command>
-		</action>
-	</keybind>
+
+
+
+
 
 
 
@@ -392,12 +423,28 @@
 	</keybind>
 
 
+	<!--
+	<keybind key="W-space">
+		<action name="ShowMenu">
+			<menu>root-menu</menu>
+		</action>
+	</keybind>
+	//-->
 
 	<keybind key="W-A-space">
 		<action name="ShowMenu">
 			<menu>root-menu</menu>
 		</action>
 	</keybind>
+
+	<keybind key="W-space">
+		<action name="Execute">
+			<command>mb-jgtools main</command>
+		</action>
+	</keybind>
+
+
+
 	<!--
 	<keybind key="Alt-F1">
 		<action name="ShowMenu">
@@ -406,17 +453,32 @@
 	</keybind>
 	//-->
 
-	<keybind key="W-space">
-		<action name="Execute">
-			<command>mb-jgtools main</command>
-		</action>
-	</keybind>
-
+	<!--
 	<keybind key="A-F1">
 		<action name="Execute">
 			<command>mb-jgtools main ipc</command>
 		</action>
 	</keybind>
+	//-->
+
+
+
+
+
+
+	<!--
+	<keybind key="W-c">
+		<action name="ShowMenu">
+			<menu>client-list-combined-menu</menu>
+		</action>
+	</keybind>
+
+	<keybind key="Alt-F3">
+		<action name="ShowMenu">
+			<menu>client-list-combined-menu</menu>
+		</action>
+	</keybind>
+	//-->
 
 
 
@@ -426,13 +488,6 @@
 			<menu>client-list-combined-menu</menu>
 		</action>
 	</keybind>
-	<!--
-	<keybind key="Alt-F3">
-		<action name="ShowMenu">
-			<menu>client-list-combined-menu</menu>
-		</action>
-	</keybind>
-	//-->
 
 	<keybind key="W-c">
 		<action name="Execute">
@@ -445,6 +500,9 @@
 			<command>jgdesktops -s</command>
 		</action>
 	</keybind>
+
+
+
 
 
 	<keybind key="W-F1">
@@ -552,7 +610,7 @@ h l
 	</keybind>
 
 
-	<!-- For [1-10] //-->
+	<!-- For Simple [1-10] //-->
 	<!--
 	<keybind key="A-1">
 		<action name="GoToDesktop">
@@ -615,6 +673,7 @@ h l
 	</keybind>
 	//-->
 
+
 	<!-- For [1-10] //-->
 	<keybind key="A-C-1">
 		<action name="GoToDesktop">
@@ -675,6 +734,7 @@ h l
 			<to>10</to>
 		</action>
 	</keybind>
+
 
 
 
@@ -799,7 +859,7 @@ h l
 	</keybind>
 
 
-	<!-- Simple For [1-10] //-->
+	<!-- Simple For Simple [1-10] //-->
 	<!--
 	<keybind key="W-1">
 		<action name="SendToDesktop">
@@ -863,7 +923,7 @@ h l
 	//-->
 
 
-	<!-- For [1-10] //-->
+	<!-- Simple For [1-10] //-->
 	<keybind key="A-S-1">
 		<action name="SendToDesktop">
 			<to>1</to>
@@ -923,6 +983,24 @@ h l
 			<to>10</to>
 		</action>
 	</keybind>
+
+
+
+
+
+	<keybind key="W-grave">
+		<action name="Execute">
+			<command>skippy-xd --paging --pivot Super_L --next</command>
+		</action>
+	</keybind>
+
+	<keybind key="W-Tab">
+		<action name="Execute">
+			<command>skippy-xd --expose --pivot Super_L --next</command>
+		</action>
+	</keybind>
+
+
 
 
 
@@ -1031,6 +1109,10 @@ h l
 	</keybind>
 	//-->
 
+
+
+
+	<!--
 	<keybind key="A-Down">
 		<action name="NextWindow">
 			<finalactions>
@@ -1040,6 +1122,9 @@ h l
 			</finalactions>
 		</action>
 	</keybind>
+	//-->
+
+
 
 
 	<!-- Alt+Left, Alt+Right //-->
@@ -1076,7 +1161,7 @@ h l
 			</finalactions>
 		</action>
 	</keybind>
-	
+
 	<keybind key="W-grave">
 		<action name="PreviousWindow">
 			<finalactions>
@@ -1107,7 +1192,7 @@ h l
 				<action name="Unshade"/>
 			</finalactions>
 		</action>
-	</keybind>	
+	</keybind>
 
 
 
@@ -1247,11 +1332,9 @@ h l
 		<action name="Close"/>
 	</keybind>
 
-	<!--
 	<keybind key="A-F4">
 		<action name="Close"/>
 	</keybind>
-	//-->
 
 	<keybind key="A-S-q">
 		<action name="Close"/>
@@ -1575,165 +1658,6 @@ h l
 
 
 
-	<!-- Tiling Window (North-South) (Top-Bottom) -->
-	<keybind key="A-C-i">
-		<action name="Undecorate"/>
-		<action name="UnmaximizeFull"/>
-		<action name="MoveResizeTo">
-			<height>50%</height>
-		</action>
-		<action name="MaximizeHorz"/>
-		<action name="MoveResizeTo">
-			<x>0</x>
-			<y>0</y>
-		</action>
-		<action name="NextWindow">
-			<interactive>no</interactive>
-			<dialog>none</dialog>
-			<finalactions>
-				<action name="Undecorate"/>
-				<action name="UnmaximizeFull"/>
-				<action name="MoveResizeTo">
-					<height>50%</height>
-				</action>
-				<action name="MaximizeHorz"/>
-				<action name="MoveResizeTo">
-					<x>0</x>
-					<y>-0</y>
-				</action>
-			</finalactions>
-		</action>
-	</keybind>
-
-
-	<!-- Tiling Window (West-East) (Left-Right) -->
-	<keybind key="A-C-o">
-		<action name="Undecorate"/>
-		<action name="UnmaximizeFull"/>
-		<action name="MoveResizeTo">
-			<width>50%</width>
-		</action>
-		<action name="MaximizeVert"/>
-		<action name="MoveResizeTo">
-			<x>0</x>
-			<y>0</y>
-		</action>
-		<action name="NextWindow">
-			<interactive>no</interactive>
-			<dialog>none</dialog>
-			<finalactions>
-				<action name="Undecorate"/>
-				<action name="UnmaximizeFull"/>
-				<action name="MoveResizeTo">
-					<width>50%</width>
-				</action>
-				<action name="MaximizeVert"/>
-				<action name="MoveResizeTo">
-					<x>-0</x>
-					<y>0</y>
-				</action>
-			</finalactions>
-		</action>
-	</keybind>
-
-
-	<!-- Restore window dimensions -->
-	<keybind key="A-C-u">
-		<action name="UnmaximizeFull"/>
-		<action name="Decorate"/>
-		<action name="NextWindow">
-			<interactive>no</interactive>
-			<dialog>none</dialog>
-			<finalactions>
-				<action name="UnmaximizeFull"/>
-				<action name="Decorate"/>
-			</finalactions>
-		</action>
-	</keybind>
-
-
-
-
-	<!-- Version: Up Left Right //-->
-	<!-- Tiling Window (North-South) (Top-Bottom) -->
-	<keybind key="A-Up">
-		<action name="Undecorate"/>
-		<action name="UnmaximizeFull"/>
-		<action name="MoveResizeTo">
-			<height>50%</height>
-		</action>
-		<action name="MaximizeHorz"/>
-		<action name="MoveResizeTo">
-			<x>0</x>
-			<y>0</y>
-		</action>
-		<action name="NextWindow">
-			<interactive>no</interactive>
-			<dialog>none</dialog>
-			<finalactions>
-				<action name="Undecorate"/>
-				<action name="UnmaximizeFull"/>
-				<action name="MoveResizeTo">
-					<height>50%</height>
-				</action>
-				<action name="MaximizeHorz"/>
-				<action name="MoveResizeTo">
-					<x>0</x>
-					<y>-0</y>
-				</action>
-			</finalactions>
-		</action>
-	</keybind>
-
-
-	<!-- Tiling Window (West-East) (Left-Right) -->
-	<keybind key="A-Right">
-		<action name="Undecorate"/>
-		<action name="UnmaximizeFull"/>
-		<action name="MoveResizeTo">
-			<width>50%</width>
-		</action>
-		<action name="MaximizeVert"/>
-		<action name="MoveResizeTo">
-			<x>0</x>
-			<y>0</y>
-		</action>
-		<action name="NextWindow">
-			<interactive>no</interactive>
-			<dialog>none</dialog>
-			<finalactions>
-				<action name="Undecorate"/>
-				<action name="UnmaximizeFull"/>
-				<action name="MoveResizeTo">
-					<width>50%</width>
-				</action>
-				<action name="MaximizeVert"/>
-				<action name="MoveResizeTo">
-					<x>-0</x>
-					<y>0</y>
-				</action>
-			</finalactions>
-		</action>
-	</keybind>
-
-
-	<!-- Restore window dimensions -->
-	<keybind key="A-Left">
-		<action name="UnmaximizeFull"/>
-		<action name="Decorate"/>
-		<action name="NextWindow">
-			<interactive>no</interactive>
-			<dialog>none</dialog>
-			<finalactions>
-				<action name="UnmaximizeFull"/>
-				<action name="Decorate"/>
-			</finalactions>
-		</action>
-	</keybind>
-
-
-
-
 	<!-- Version: [k j h l] //-->
 	<keybind key="A-C-k">
 		<action name="Unmaximize" />
@@ -1820,6 +1744,8 @@ h l
 	</keybind>
 
 
+
+
 	<!-- Version: [k j h l] //-->
 	<keybind key="A-S-k">
 		<action name="Unmaximize" />
@@ -1860,6 +1786,7 @@ h l
 			<height>50%</height>
 		</action>
 	</keybind>
+
 
 
 
@@ -1906,6 +1833,7 @@ h l
 
 
 
+
 	<keybind key="W-m">
 		<action name="UnmaximizeFull"/>
 		<action name="MoveResizeTo">
@@ -1917,23 +1845,30 @@ h l
 
 
 
-	<!--
+	<keybind key="Alt-F1">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>AppLauncher</name>
+			</startupnotify>
+			<command>mb-jgtools main ipc</command>
+		</action>
+	</keybind>
+
+
 	<keybind key="Alt-F2">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>RofiShowDrun</name>
+				<name>RunDialog</name>
 			</startupnotify>
-			<command>rofi -show drun -show-icons</command>
-		</action>
-	</keybind>
-	//-->
-
-	<keybind key="Alt-F2">
-		<action name="Execute">
 			<command>gmrun</command>
 		</action>
 	</keybind>
+
+
+
+
 
 
 	<keybind key="A-S-d">
@@ -1974,9 +1909,12 @@ h l
 				<enabled>true</enabled>
 				<name>Terminal</name>
 			</startupnotify>
-			<command>sakura -m</command>
+			<command>terminator</command>
 		</action>
 	</keybind>
+
+
+
 
 	<keybind key="A-S-a">
 		<action name="Execute">
@@ -1984,7 +1922,7 @@ h l
 				<enabled>true</enabled>
 				<name>Terminal</name>
 			</startupnotify>
-			<command>sakura -m</command>
+			<command>terminator</command>
 		</action>
 	</keybind>
 
@@ -1994,26 +1932,20 @@ h l
 				<enabled>true</enabled>
 				<name>Terminal</name>
 			</startupnotify>
-			<command>terminator</command>
-		</action>
-	</keybind>
-
-	<!-- ## Terminal-Quake //-->
-	<keybind key="A-S-y">
-		<action name="Execute">
-			<command>mabox-terminal</command>
+			<command>xfce4-terminal</command>
 		</action>
 	</keybind>
 
 
-	<!-- ## Terminal //-->
+
+
 	<keybind key="A-S-t">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
 				<name>Terminal</name>
 			</startupnotify>
-			<command>terminator</command>
+			<command>lxterminal</command>
 		</action>
 	</keybind>
 
@@ -2023,9 +1955,30 @@ h l
 				<enabled>true</enabled>
 				<name>Terminal</name>
 			</startupnotify>
-			<command>xfce4-terminal --maximize</command>
+			<command>qterminal</command>
 		</action>
 	</keybind>
+
+
+
+
+
+
+
+
+
+
+	<!-- ## Terminal-Quake //-->
+	<keybind key="A-S-y">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>Terminal-Quake</name>
+			</startupnotify>
+			<command>xfce4-terminal --drop-down</command>
+		</action>
+	</keybind>
+
 
 
 	<!-- ## File Manager //-->
@@ -2035,7 +1988,7 @@ h l
 				<enabled>true</enabled>
 				<name>FileManager</name>
 			</startupnotify>
-			<command>pcmanfm-qt</command>
+			<command>pcmanfm</command>
 		</action>
 	</keybind>
 
@@ -2045,7 +1998,7 @@ h l
 				<enabled>true</enabled>
 				<name>Files</name>
 			</startupnotify>
-			<command>pcmanfm</command>
+			<command>thunar</command>
 		</action>
 	</keybind>
 
@@ -2057,7 +2010,7 @@ h l
 				<enabled>true</enabled>
 				<name>WebBrowser</name>
 			</startupnotify>
-			<command>firefox</command>
+			<command>firefox --new-tab about:blank</command>
 		</action>
 	</keybind>
 
@@ -2069,13 +2022,20 @@ h l
 				<enabled>true</enabled>
 				<name>TextEditor</name>
 			</startupnotify>
-			<command>mousepad</command>
+			<command>geany</command>
 		</action>
 	</keybind>
 
 
 
+
+
+
+
+
+
 	<!-- ## Volume Control //-->
+	<!--
 	<keybind key="A-S-v">
 		<action name="Execute">
 			<startupnotify>
@@ -2085,36 +2045,65 @@ h l
 			<command>mate-volume-control</command>
 		</action>
 	</keybind>
+	//-->
+
+
+	<!--
+	<keybind key="A-S-v">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>VolumeControl</name>
+			</startupnotify>
+			<command>pavucontrol-qt</command>
+		</action>
+	</keybind>
+	//-->
+
+
+	<keybind key="A-S-v">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>VolumeControl</name>
+			</startupnotify>
+			<command>pavucontrol</command>
+		</action>
+	</keybind>
+
+
+
+
 
 
 	<keybind key="A-m">
 		<action name="Execute">
-			<command>amixer -q -D pulse sset Master toggle</command>
+			<command>pamixer -t</command>
 		</action>
 	</keybind>
 
 	<keybind key="A-S-comma">
 		<action name="Execute">
-			<command>amixer -q -D pulse sset Master 5%- unmute</command>
+			<command>pamixer -d 3</command>
 		</action>
 	</keybind>
 
 	<keybind key="A-S-period">
 		<action name="Execute">
-			<command>amixer -q -D pulse sset Master 5%+ unmute</command>
+			<command>pamixer -i 3</command>
 		</action>
 	</keybind>
 
 
 	<keybind key="A-C-comma">
 		<action name="Execute">
-			<command>amixer -q -D pulse sset Master 1%- unmute</command>
+			<command>pamixer -d 2</command>
 		</action>
 	</keybind>
 
 	<keybind key="A-C-period">
 		<action name="Execute">
-			<command>amixer -q -D pulse sset Master 1%+ unmute</command>
+			<command>pamixer -i 2</command>
 		</action>
 	</keybind>
 
@@ -2123,21 +2112,79 @@ h l
 
 	<keybind key="XF86AudioMute">
 		<action name="Execute">
-			<command>amixer -q -D pulse sset Master toggle</command>
+			<command>pamixer -t</command>
 		</action>
 	</keybind>
 
 	<keybind key="XF86AudioLowerVolume">
 		<action name="Execute">
-			<command>amixer -q -D pulse sset Master 5%- unmute</command>
+			<command>pamixer -d 2</command>
 		</action>
 	</keybind>
 
 	<keybind key="XF86AudioRaiseVolume">
 		<action name="Execute">
-			<command>amixer -q -D pulse sset Master 5%+ unmute</command>
+			<command>pamixer -i 2</command>
 		</action>
 	</keybind>
+
+
+
+
+	<keybind key="XF86AudioStop">
+		<action name="Execute">
+			<command>playerctl stop</command>
+		</action>
+	</keybind>
+
+	<keybind key="XF86AudioPlay">
+		<action name="Execute">
+			<command>playerctl play-pause</command>
+		</action>
+	</keybind>
+
+	<keybind key="XF86AudioPrev">
+		<action name="Execute">
+			<command>playerctl previous</command>
+		</action>
+	</keybind>
+
+	<keybind key="XF86AudioNext">
+		<action name="Execute">
+			<command>playerctl next</command>
+		</action>
+	</keybind>
+
+
+
+
+
+
+
+
+
+
+
+
+	<keybind key="XF86MonBrightnessDown">
+		<action name="Execute">
+			<command>mb-brightness dec</command>
+		</action>
+	</keybind>
+
+	<keybind key="XF86MonBrightnessUp">
+		<action name="Execute">
+			<command>mb-brightness inc</command>
+		</action>
+	</keybind>
+
+
+
+
+
+
+
+
 
 
 
@@ -2145,9 +2192,10 @@ h l
 
 	<keybind key="Print">
 		<action name="Execute">
-			<command>flameshot gui</command>
+			<command>mb-jgtools screenshot</command>
 		</action>
 	</keybind>
+
 
 	<keybind key="A-Print">
 		<action name="Execute">
@@ -2155,11 +2203,45 @@ h l
 		</action>
 	</keybind>
 
-	<keybind key="W-Print">
+
+	<keybind key="S-Print">
 		<action name="Execute">
-			<command>mb-jgtools screenshot</command>
+			<command>flameshot gui</command>
 		</action>
 	</keybind>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Launch scrot when Print is pressed -->
+	<!--
+	<keybind key="Print">
+		<action name="Execute">
+			<command>scrot</command>
+		</action>
+	</keybind>
+	//-->
+
+
+	<!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
+	<!--
+	<keybind key="A-Print">
+		<action name="Execute">
+			<command>scrot -s</command>
+		</action>
+	</keybind>
+	//-->
+
 
 
 
@@ -2167,13 +2249,13 @@ h l
 	<!-- ## Wallpaper //-->
 	<keybind key="A-w">
 		<action name="Execute">
-			<command>feh --bg-fill --randomize ~/Pictures/Wallpaper</command>
+			<command>openbox-wallpaper-ctrl shuf</command>
 		</action>
 	</keybind>
 
 	<keybind key="A-C-w">
 		<action name="Execute">
-			<command>feh --bg-fill ~/Pictures/Wallpaper/default.jpg</command>
+			<command>openbox-wallpaper-ctrl default</command>
 		</action>
 	</keybind>
 
@@ -2228,7 +2310,6 @@ chmod 755 clicksnap
 sudo cp clicksnap /usr/local/bin/clicksnap
 ```
 
-
 ## Mousebind
 
 | Setting                                      | Mousebind                  |
@@ -2242,28 +2323,33 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 
 //-->
 
-<!--
+		<!--
 		<mousebind action="Press" button="A-Left">
 			<action name="UnmaximizeFull"/>
 			<action name="Execute">
 				<command>clicksnap</command>
 			</action>
 		</mousebind>
-//-->
+		//-->
 
+		<!--
 		<mousebind action="Press" button="C-S-Left">
 			<action name="UnmaximizeFull"/>
 			<action name="Execute">
 				<command>snapwin</command>
 			</action>
 		</mousebind>
+		//-->
 
+		<!--
 		<mousebind action="Press" button="W-S-Left">
 			<action name="UnmaximizeFull"/>
 			<action name="Execute">
 				<command>deskgrid</command>
 			</action>
 		</mousebind>
+		//-->
+
 
 		<mousebind button="W-Left" action="Press">
 			<action name="Focus"/>
@@ -2307,11 +2393,28 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 			<action name="Resize"/>
 		</mousebind>
 
+		<mousebind button="W-Middle" action="Click">
+			<action name="Focus"/>
+			<action name="Raise"/>
+			<action name="ShowMenu">
+				<menu>client-menu</menu>
+			</action>
+		</mousebind>
+
+		<mousebind button="A-Middle" action="Press">
+			<action name="Lower"/>
+			<action name="FocusToBottom"/>
+			<action name="Unfocus"/>
+		</mousebind>
+
+		<!--
 		<mousebind button="W-Middle" action="Press">
 			<action name="Lower"/>
 			<action name="FocusToBottom"/>
 			<action name="Unfocus"/>
 		</mousebind>
+		//-->
+
 
 
 
@@ -2379,9 +2482,11 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 			</action>
 		</mousebind>
 
+
 		<mousebind button="Left" action="DoubleClick">
 			<action name="ToggleMaximize"/>
 		</mousebind>
+
 
 		<mousebind button="Up" action="Click">
 			<action name="if">
@@ -2396,6 +2501,7 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 				</then>
 			</action>
 		</mousebind>
+
 		<mousebind button="Down" action="Click">
 			<action name="if">
 				<shaded>yes</shaded>
@@ -2405,6 +2511,7 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 				</then>
 			</action>
 		</mousebind>
+
 
 		<mousebind button="W-Up" action="Click">
 			<action name="if">
@@ -2417,6 +2524,7 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 				</then>
 			</action>
 		</mousebind>
+
 		<mousebind button="W-Down" action="Click">
 			<action name="if">
 				<shaded>yes</shaded>
@@ -2708,13 +2816,34 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 
 	<context name="Root">
 
+
+		<!-- ## ToggleShowDesktop //-->
+
 		<!-- Mouse Button Left Click //-->
+		<!--
 		<mousebind button="Left" action="Press">
 			<action name="ToggleShowDesktop"/>
 		</mousebind>
+		//-->
 
-		<!-- Menus -->
+		<!-- Mouse Button Left DoubleClick //-->
+		<mousebind button="Left" action="DoubleClick">
+			<action name="ToggleShowDesktop"/>
+		</mousebind>
+
+
+
+
+		<!-- ## Menus -->
+
 		<!-- Mouse Button Middle Click //-->
+		<!--
+		<mousebind button="Middle" action="Press">
+			<action name="ShowMenu">
+				<menu>client-list-combined-menu</menu>
+			</action>
+		</mousebind>
+		//-->
 
 		<mousebind button="A-Middle" action="Press">
 			<action name="ShowMenu">
@@ -2728,7 +2857,15 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 			</action>
 		</mousebind>
 
+
 		<!-- Mouse Button Right Click //-->
+		<!--
+		<mousebind button="Right" action="Press">
+			<action name="ShowMenu">
+				<menu>root-menu</menu>
+			</action>
+		</mousebind>
+		//-->
 
 		<mousebind button="A-Right" action="Press">
 			<action name="ShowMenu">
@@ -2744,6 +2881,9 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 
 
 	</context>
+
+
+
 
 
 
@@ -2786,8 +2926,11 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 	//-->
 	<!-- default menu file (or custom one in $HOME/.config/openbox/) //-->
 	<!-- system menu files on Debian systems //-->
-	<file>/var/lib/openbox/debian-menu.xml</file>
-	<file>menu.xml</file>
+	<!-- <file>/var/lib/openbox/debian-menu.xml</file> //-->
+	<!-- Lubuntu specific : Default menu of Lubuntu -->
+	<!-- <file>/usr/share/lubuntu/openbox/menu.xml</file> //-->
+	<!-- <file>menu.xml</file> //-->
+	<file>menu-icons.xml</file>
 	<hideDelay>200</hideDelay>
 	<!--
 		if a press-release lasts longer than this setting (in milliseconds),
@@ -2955,67 +3098,7 @@ sudo cp clicksnap /usr/local/bin/clicksnap
 
 
 
-	<application class="Atom" type="normal">
-		<desktop>2</desktop>
-		<focus>yes</focus>
-	</application>
 
-	<application class="Code" type="normal">
-		<desktop>2</desktop>
-		<focus>yes</focus>
-	</application>
-
-	<application class="code-oss" type="normal">
-		<desktop>2</desktop>
-		<focus>yes</focus>
-	</application>
-
-	<application class="Gedit" type="normal">
-		<desktop>2</desktop>
-		<focus>yes</focus>
-	</application>
-
-	<application class="kate" type="normal">
-		<desktop>2</desktop>
-		<focus>yes</focus>
-	</application>
-
-	<application class="Gnome-builder" type="normal">
-		<desktop>2</desktop>
-		<focus>yes</focus>
-	</application>
-
-	<application class="kdevelop" type="normal">
-		<desktop>2</desktop>
-		<focus>yes</focus>
-	</application>
-
-	<application class="QtCreator" type="normal">
-		<desktop>2</desktop>
-		<focus>yes</focus>
-	</application>
-
-
-
-	<application class="Firefox" type="normal" role="browser">
-		<desktop>3</desktop>
-		<focus>yes</focus>
-	</application>
-
-	<application class="firefox" type="normal" role="browser">
-		<desktop>3</desktop>
-		<focus>yes</focus>
-	</application>
-
-	<application class="Chromium-browser" type="normal">
-		<desktop>3</desktop>
-		<focus>yes</focus>
-	</application>
-
-	<application class="Google-chrome" type="normal">
-		<desktop>3</desktop>
-		<focus>yes</focus>
-	</application>
 
 
 

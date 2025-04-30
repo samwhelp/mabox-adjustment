@@ -2,13 +2,34 @@
 
 	<context name="Root">
 
+
+		<!-- ## ToggleShowDesktop //-->
+
 		<!-- Mouse Button Left Click //-->
+		<!--
 		<mousebind button="Left" action="Press">
 			<action name="ToggleShowDesktop"/>
 		</mousebind>
+		//-->
 
-		<!-- Menus -->
+		<!-- Mouse Button Left DoubleClick //-->
+		<mousebind button="Left" action="DoubleClick">
+			<action name="ToggleShowDesktop"/>
+		</mousebind>
+
+
+
+
+		<!-- ## Menus -->
+
 		<!-- Mouse Button Middle Click //-->
+		<!--
+		<mousebind button="Middle" action="Press">
+			<action name="ShowMenu">
+				<menu>client-list-combined-menu</menu>
+			</action>
+		</mousebind>
+		//-->
 
 		<mousebind button="A-Middle" action="Press">
 			<action name="ShowMenu">
@@ -22,7 +43,15 @@
 			</action>
 		</mousebind>
 
+
 		<!-- Mouse Button Right Click //-->
+		<!--
+		<mousebind button="Right" action="Press">
+			<action name="ShowMenu">
+				<menu>root-menu</menu>
+			</action>
+		</mousebind>
+		//-->
 
 		<mousebind button="A-Right" action="Press">
 			<action name="ShowMenu">
@@ -38,6 +67,9 @@
 
 
 	</context>
+
+
+
 
 <?php
 /*

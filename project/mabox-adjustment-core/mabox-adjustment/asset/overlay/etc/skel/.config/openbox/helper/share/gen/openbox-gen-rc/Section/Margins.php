@@ -1,12 +1,14 @@
 
 
-<!-- for top_bottom_panel //-->
+<!-- for top_bottom_panel
 <margins>
-	<top>50</top>
-	<bottom>50</bottom>
-	<left>10</left>
-	<right>10</right>
+	<top>48</top>
+	<bottom>48</bottom>
+	<left>8</left>
+	<right>8</right>
 </margins>
+//-->
+
 
 <!-- for top_panel
 <margins>
@@ -17,14 +19,15 @@
 </margins>
 //-->
 
-<!-- for bottom_panel
+
+<!-- for bottom_panel //-->
 <margins>
 	<top>8</top>
 	<bottom>48</bottom>
 	<left>8</left>
 	<right>8</right>
 </margins>
-//-->
+
 
 <!--
 <margins>

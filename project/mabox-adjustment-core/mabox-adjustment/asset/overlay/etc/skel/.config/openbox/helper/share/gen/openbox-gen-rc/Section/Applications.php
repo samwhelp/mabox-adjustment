@@ -115,19 +115,19 @@
 <?php //include_once(__DIR__ . '/Rule/Mousepad.php'); ?>
 <?php //include_once(__DIR__ . '/Rule/Geany.php'); ?>
 <?php //include_once(__DIR__ . '/Rule/Leafpad.php'); ?>
-<?php include_once(__DIR__ . '/Rule/Atom.php'); ?>
-<?php include_once(__DIR__ . '/Rule/Code.php'); ?>
-<?php include_once(__DIR__ . '/Rule/Gedit.php'); ?>
-<?php include_once(__DIR__ . '/Rule/Kate.php'); ?>
-<?php include_once(__DIR__ . '/Rule/GnomeBuilder.php'); ?>
-<?php include_once(__DIR__ . '/Rule/Kdevelop.php'); ?>
-<?php include_once(__DIR__ . '/Rule/QtCreator.php'); ?>
+<?php //include_once(__DIR__ . '/Rule/Atom.php'); ?>
+<?php //include_once(__DIR__ . '/Rule/Code.php'); ?>
+<?php //include_once(__DIR__ . '/Rule/Gedit.php'); ?>
+<?php //include_once(__DIR__ . '/Rule/Kate.php'); ?>
+<?php //include_once(__DIR__ . '/Rule/GnomeBuilder.php'); ?>
+<?php //include_once(__DIR__ . '/Rule/Kdevelop.php'); ?>
+<?php //include_once(__DIR__ . '/Rule/QtCreator.php'); ?>
 
 
 <?php // 3:Web ?>
-<?php include_once(__DIR__ . '/Rule/Firefox.php'); ?>
-<?php include_once(__DIR__ . '/Rule/ChromiumBrowser.php'); ?>
-<?php include_once(__DIR__ . '/Rule/GoogleChrome.php'); ?>
+<?php //include_once(__DIR__ . '/Rule/Firefox.php'); ?>
+<?php //include_once(__DIR__ . '/Rule/ChromiumBrowser.php'); ?>
+<?php //include_once(__DIR__ . '/Rule/GoogleChrome.php'); ?>
 
 
 <?php // 4:Term ?>

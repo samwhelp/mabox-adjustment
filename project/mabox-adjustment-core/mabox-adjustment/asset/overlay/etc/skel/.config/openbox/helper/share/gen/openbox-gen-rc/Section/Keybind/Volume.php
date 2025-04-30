@@ -1,6 +1,7 @@
 
 
 	<!-- ## Volume Control //-->
+	<!--
 	<keybind key="A-S-v">
 		<action name="Execute">
 			<startupnotify>
@@ -10,7 +11,35 @@
 			<command>mate-volume-control</command>
 		</action>
 	</keybind>
+	//-->
 
+
+	<!--
+	<keybind key="A-S-v">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>VolumeControl</name>
+			</startupnotify>
+			<command>pavucontrol-qt</command>
+		</action>
+	</keybind>
+	//-->
+
+
+	<keybind key="A-S-v">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>VolumeControl</name>
+			</startupnotify>
+			<command>pavucontrol</command>
+		</action>
+	</keybind>
+
+
+<?php
+/*
 
 	<keybind key="A-m">
 		<action name="Execute">
@@ -63,6 +92,93 @@
 			<command>amixer -q -D pulse sset Master 5%+ unmute</command>
 		</action>
 	</keybind>
+
+
+*/
+?>
+
+
+
+
+	<keybind key="A-m">
+		<action name="Execute">
+			<command>pamixer -t</command>
+		</action>
+	</keybind>
+
+	<keybind key="A-S-comma">
+		<action name="Execute">
+			<command>pamixer -d 3</command>
+		</action>
+	</keybind>
+
+	<keybind key="A-S-period">
+		<action name="Execute">
+			<command>pamixer -i 3</command>
+		</action>
+	</keybind>
+
+
+	<keybind key="A-C-comma">
+		<action name="Execute">
+			<command>pamixer -d 2</command>
+		</action>
+	</keybind>
+
+	<keybind key="A-C-period">
+		<action name="Execute">
+			<command>pamixer -i 2</command>
+		</action>
+	</keybind>
+
+
+
+
+	<keybind key="XF86AudioMute">
+		<action name="Execute">
+			<command>pamixer -t</command>
+		</action>
+	</keybind>
+
+	<keybind key="XF86AudioLowerVolume">
+		<action name="Execute">
+			<command>pamixer -d 2</command>
+		</action>
+	</keybind>
+
+	<keybind key="XF86AudioRaiseVolume">
+		<action name="Execute">
+			<command>pamixer -i 2</command>
+		</action>
+	</keybind>
+
+
+
+
+	<keybind key="XF86AudioStop">
+		<action name="Execute">
+			<command>playerctl stop</command>
+		</action>
+	</keybind>
+
+	<keybind key="XF86AudioPlay">
+		<action name="Execute">
+			<command>playerctl play-pause</command>
+		</action>
+	</keybind>
+
+	<keybind key="XF86AudioPrev">
+		<action name="Execute">
+			<command>playerctl previous</command>
+		</action>
+	</keybind>
+
+	<keybind key="XF86AudioNext">
+		<action name="Execute">
+			<command>playerctl next</command>
+		</action>
+	</keybind>
+
 
 
 <?php
