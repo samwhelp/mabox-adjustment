@@ -1,4 +1,4 @@
-TerminalEmulator=sakura
-FileManager=pcmanfm-qt
+TerminalEmulator=terminator
+FileManager=pcmanfm
 WebBrowser=firefox
 MailReader=thunderbird
