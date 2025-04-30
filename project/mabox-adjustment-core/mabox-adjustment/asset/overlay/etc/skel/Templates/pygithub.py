@@ -8,15 +8,21 @@
 ## * https://github.com/PyGithub/PyGithub
 ## * https://pypi.org/project/PyGithub/
 ##
-## ## Install PyGithub
+## ## install python-pygithub
 ##
-## ### Manjaro (Arch)
+## > for archlinux or manjaro
 ##
 ## ``` sh
 ## sudo pacman -S --needed python-pygithub
 ## ```
 ##
-## ### Ubuntu
+## > for fedora
+##
+## ``` sh
+## sudo dnf install python3-github
+## ```
+##
+## > for debian or ubuntu
 ##
 ## ``` sh
 ## sudo apt-get install python3-github
