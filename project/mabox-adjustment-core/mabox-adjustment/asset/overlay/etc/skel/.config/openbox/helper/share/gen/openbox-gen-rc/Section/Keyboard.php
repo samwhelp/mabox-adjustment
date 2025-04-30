@@ -9,7 +9,7 @@
 <?php include_once(__DIR__ . '/Keybind/MenuClient.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/MenuRoot.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/MenuClientList.php'); ?>
-<?php include_once(__DIR__ . '/Keybind/MenuLeftRight.php'); ?>
+<?php include_once(__DIR__ . '/Keybind/MenuExtra.php'); ?>
 
 <?php include_once(__DIR__ . '/Keybind/WorkspaceSwitch.php'); ?>
 <?php include_once(__DIR__ . '/Keybind/WindowMoveToWorkspace.php'); ?>
