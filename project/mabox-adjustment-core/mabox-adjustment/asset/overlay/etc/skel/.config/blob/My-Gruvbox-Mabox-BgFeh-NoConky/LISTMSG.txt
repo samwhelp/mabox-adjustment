@@ -1,4 +1,4 @@
-<b>Collection name: MMy-Gruvbox-BgFeh-NoConky</b>
+<b>Collection name: My-Gruvbox-Mabox-BgFeh-NoConky</b>
 Saved: Tue Nov  9 11:47:30 PM CET 2021
 
 Wallpaper saved by Feh:\n ~/.fehbg;\n
