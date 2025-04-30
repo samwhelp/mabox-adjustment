@@ -1,6 +1,6 @@
 
 <theme>
-	<name>MBcolors</name>
+	<name>gruvbox-mabox</name>
 	<titleLayout>NLIMC</titleLayout>
 	<!-- <titleLayout>NDSLIMC</titleLayout> //-->
 	<!--

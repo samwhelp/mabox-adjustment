@@ -1,6 +1,7 @@
   <theme>
     <name>gruvbox-mabox</name>
-    <titleLayout>NDSLIMC</titleLayout>
+    <titleLayout>NLIMC</titleLayout>
+    <!-- <titleLayout>NDSLIMC</titleLayout> //-->
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
