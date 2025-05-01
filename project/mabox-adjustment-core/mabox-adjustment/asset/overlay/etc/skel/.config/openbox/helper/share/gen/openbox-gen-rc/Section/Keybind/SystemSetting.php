@@ -5,7 +5,7 @@
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>AppearanceSettings</name>
+				<name>Appearance Settings</name>
 			</startupnotify>
 			<command>lxappearance</command>
 		</action>
@@ -19,7 +19,7 @@
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
-				<name>ThemeManager</name>
+				<name>Theme Manager</name>
 			</startupnotify>
 			<command>mb-obthemes</command>
 		</action>
@@ -43,8 +43,22 @@
 
 
 
-	<!-- ## Launch obconf //-->
+	<!-- ## Launch Control Center //-->
 	<keybind key="W-S-s">
+		<action name="Execute">
+			<startupnotify>
+				<enabled>true</enabled>
+				<name>Mabox Linux Control Center</name>
+			</startupnotify>
+			<command>mcc</command>
+		</action>
+	</keybind>
+
+
+
+
+	<!-- ## Launch obconf //-->
+	<keybind key="W-C-s">
 		<action name="Execute">
 			<startupnotify>
 				<enabled>true</enabled>
