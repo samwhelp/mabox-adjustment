@@ -2,24 +2,17 @@
 
 	<keybind key="Alt-F1">
 		<action name="Execute">
-			<startupnotify>
-				<enabled>true</enabled>
-				<name>AppLauncher</name>
-			</startupnotify>
 			<command>mb-jgtools main ipc</command>
 		</action>
 	</keybind>
 
-
 	<keybind key="Alt-F2">
 		<action name="Execute">
-			<startupnotify>
-				<enabled>true</enabled>
-				<name>RunDialog</name>
-			</startupnotify>
 			<command>gmrun</command>
 		</action>
 	</keybind>
+
+
 
 
 <?php

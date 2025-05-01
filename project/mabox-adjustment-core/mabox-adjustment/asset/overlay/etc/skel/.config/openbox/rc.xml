@@ -143,9 +143,9 @@
 		use obconf if you want to change these without having to log out
 		and back in
 	//-->
-	<!--<number>4</number>//-->
-	<number>5</number>
-	<!--<number>6</number>//-->
+	<number>4</number>
+	<!-- <number>5</number> //-->
+	<!-- <number>6</number> //-->
 	<firstdesk>1</firstdesk>
 	<names>
 		<!--
@@ -210,17 +210,18 @@
 
 
 
-<!-- for top_bottom_panel
+<!-- for top_bottom_panel //-->
 <margins>
 	<top>48</top>
 	<bottom>48</bottom>
 	<left>8</left>
 	<right>8</right>
 </margins>
-//-->
 
 
-<!-- for top_panel
+
+<!-- for top_panel //-->
+<!--
 <margins>
 	<top>48</top>
 	<bottom>8</bottom>
@@ -231,12 +232,14 @@
 
 
 <!-- for bottom_panel //-->
+<!--
 <margins>
 	<top>8</top>
 	<bottom>48</bottom>
 	<left>8</left>
 	<right>8</right>
 </margins>
+//-->
 
 
 <!--
@@ -1847,24 +1850,17 @@ h l
 
 	<keybind key="Alt-F1">
 		<action name="Execute">
-			<startupnotify>
-				<enabled>true</enabled>
-				<name>AppLauncher</name>
-			</startupnotify>
 			<command>mb-jgtools main ipc</command>
 		</action>
 	</keybind>
 
-
 	<keybind key="Alt-F2">
 		<action name="Execute">
-			<startupnotify>
-				<enabled>true</enabled>
-				<name>RunDialog</name>
-			</startupnotify>
 			<command>gmrun</command>
 		</action>
 	</keybind>
+
+
 
 
 
@@ -2249,15 +2245,21 @@ h l
 	<!-- ## Wallpaper //-->
 	<keybind key="A-w">
 		<action name="Execute">
-			<command>openbox-wallpaper-ctrl shuf</command>
+			<command>feh --recursive --bg-fill --randomize ~/wallpapers</command>
 		</action>
 	</keybind>
 
 	<keybind key="A-C-w">
 		<action name="Execute">
-			<command>openbox-wallpaper-ctrl default</command>
+			<command>feh --bg-fill ~/wallpapers/default.jpg</command>
 		</action>
 	</keybind>
+
+
+
+
+
+
 
 </keyboard>
 
