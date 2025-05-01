@@ -4,11 +4,11 @@ conky.config = {
 	own_window_type = 'desktop',
 	own_window_transparent = true,
 	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
-	own_window_colour = '#142c2c',
+	own_window_colour = '#060c09',
 	own_window_class = 'Conky',
 	own_window_title = 'Mabox Sysinfo Bar Conky',
     
-    alignment = 'bottom_right',
+    alignment = 'top_right',
 	gap_x = 30,
 	gap_y = 60,
 	minimum_width = '200',
@@ -19,15 +19,15 @@ conky.config = {
 	override_utf8_locale = true,
     
     
-	draw_shades = true,
+	draw_shades = false,
 	default_shade_color = '#222222',
 	draw_outline = false,
 	default_outline_color = '#222222',
     
-    default_color = '#d4be98',
-	color0 = '#5e5445',
-	color1 = '#88593a',
-    color2 = '#8e6106',
+    default_color = '#5E7EA5',
+	color0 = '#E0D3A4',
+	color1 = '#bf616b',
+    color2 = '#8EBBBA',
 	cpu_avg_samples = 2,
 	
 
@@ -43,7 +43,7 @@ conky.config = {
 	imlib_cache_size = 0,
     short_units = true,
 	double_buffer = true,
-	update_interval = 1,
+	update_interval = 2,
 };
 
 conky.text = [[
@@ -67,7 +67,8 @@ ${goto 18}$color0${top_mem name 3}$alignr$color${top_mem mem_res 3}
 ${goto 18}$color0${top_mem name 4}$alignr$color${top_mem mem_res 4}
 ${goto 18}$color0${top_mem name 5}$alignr$color${top_mem mem_res 5}
 #
-${voffset 10}$alignr disk ${color0}${fs_used /} - ${fs_size /}
+${image ~/.config/conky/images/mabox_3d.png -p 0,250 -s 64x64}
+$alignr disk ${color0}${fs_used /} - ${fs_size /}
 $alignr$color memory ${color0}$legacymem - $memmax
 #${alignr}${color0}${font Cantarell:size=9}swap $swapmax - $swap
 #

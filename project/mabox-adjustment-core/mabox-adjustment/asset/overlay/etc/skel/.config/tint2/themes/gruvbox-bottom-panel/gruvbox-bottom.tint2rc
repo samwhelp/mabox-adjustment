@@ -64,7 +64,8 @@ border_color_pressed = #000000 0
 #-------------------------------------
 # Panel
 panel_items = PPPPPF:ET:FEEPSCPP
-panel_size = 1900 42
+#panel_size = 1900 42
+panel_size = 90% 42
 panel_margin = 7 7
 panel_padding = 4 4 4
 panel_background_id = 1
@@ -163,7 +164,7 @@ launcher_tooltip = 0
 # Clock
 time1_format = %H:%M:%S
 #time2_format = %A %Y-%m-%d
-time2_format =
+#time2_format = %A %Y-%m-%d
 time1_font = Rubik 16
 #time1_font = Rubik 8
 #time2_font = Rubik 8

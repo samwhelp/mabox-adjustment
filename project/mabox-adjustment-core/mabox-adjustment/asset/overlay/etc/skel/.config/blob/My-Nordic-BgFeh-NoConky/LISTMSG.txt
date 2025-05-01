@@ -4,4 +4,4 @@ Saved: Tue Nov  9 11:47:30 PM CET 2021
 Wallpaper saved by Feh:\n ~/.fehbg;\n
 Openbox theme:  Nordic\n
 GTK theme:  Nordic\n
-Running Tint2s:\t\n\t~/.config/tint2/themes/gruvbox-top-bottom-panel/gruvbox-top.tint2rc\n\t~/.config/tint2/themes/gruvbox-top-bottom-panel/gruvbox-bottom.tint2rc\n\t~/.config/tint2/themes/gruvbox-top-bottom-panel/gruvbox-launcher.tint2rc\n
+Running Tint2s:\t\n\t~/.config/tint2/themes/nordic-top-bottom-panel/nordic-top.tint2rc\n\t~/.config/tint2/themes/nordic-top-bottom-panel/nordic-bottom.tint2rc\n

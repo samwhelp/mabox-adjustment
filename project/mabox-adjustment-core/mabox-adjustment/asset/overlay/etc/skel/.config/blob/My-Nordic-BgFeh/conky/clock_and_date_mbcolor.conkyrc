@@ -4,11 +4,11 @@ conky.config = {
 	own_window_type = 'desktop',
 	own_window_transparent = true,
 	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager,sticky',
-	own_window_colour = '#142c2c',
+	own_window_colour = '#060c09',
 	own_window_class = 'Conky',
 	own_window_title = 'Mabox Simple Clock and Date',
     
-    alignment = 'top_middle',
+    alignment = 'bottom_middle',
 	gap_x = 0,
 	gap_y = 60,
 	
@@ -19,14 +19,14 @@ conky.config = {
 	override_utf8_locale = true,
 
 -- COLORS
-	draw_shades = true,
+	draw_shades = false,
 	default_shade_color = '#000000',
 	draw_outline = false,
 	default_outline_color = '#222222',
 
-	default_color = '#d4be98',
-	color0 = '#5e5445',
-    color1 = '#88593a',
+	default_color = '#5E7EA5',
+	color0 = '#E0D3A4',
+    color1 = '#bf616b',
 
 -- BORDERS
 	draw_borders = false,
@@ -59,7 +59,7 @@ conky.config = {
 -- It is highly recommended to use own window with this one
 -- so double buffer won't be so big.
 	double_buffer = true,
-	update_interval = 1,
+	update_interval = 2,
 };
 
 conky.text = [[

@@ -4,11 +4,11 @@ conky.config = {
 	own_window_type = 'desktop',
 	own_window_transparent = true,
 	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager,sticky',
-	own_window_colour = '#130f2d',
+	own_window_colour = '#363949',
 	own_window_class = 'Conky',
 	own_window_title = 'Mabox Shortcuts Conky',
     
-    alignment = 'top_left',
+    alignment = 'bottom_left',
 	gap_x = 30,
 	gap_y = 60,
 	minimum_width = '200',
@@ -20,13 +20,13 @@ conky.config = {
 	override_utf8_locale = true,
 
 -- COLORS
-	draw_shades = true,
+	draw_shades = false,
 	default_shade_color = '#000000',
 	draw_outline = false,
 	default_outline_color = '#222222',
 
-	default_color = '#d4be98',
-	color0 = '#5e5445',
+	default_color = '#a380d7',
+	color0 = '#80849f',
 
 -- BORDERS
 	draw_borders = false,
@@ -58,14 +58,14 @@ conky.config = {
 -- It is highly recommended to use own window with this one
 -- so double buffer won't be so big.
 	double_buffer = true,
-	update_interval = 1,
+	update_interval = 2,
 };
 
 conky.text = [[
 ${color}RUN${alignr}${color0}super = windows key${voffset -8}
 ${color0}${hr 1}${voffset -4}
 ${color0}terminal  ${alignr}${color}super+t
-${color0}quake-terminal  ${alignr}${color}ctrl+~
+${color0}quake-terminal  ${alignr}${color}ctrl+~,F12
 ${color0}file manager  ${alignr}${color}super+f
 ${color0}web browser  ${alignr}${color}super+w
 ${color0}text editor  ${alignr}${color}super+e
@@ -81,6 +81,7 @@ ${color}WINDOWS ${color0} ${hr 1}${voffset -2}
 ${color0}close ${alignr} ${color}alt+F4
 ${color0}iconify ${alignr} ${color}alt+F5
 ${color0}maximize ${alignr} ${color}alt+F6
+${color0}expose ${alignr} ${color}super+~
 ${color0}show desktop ${alignr} ${color}super+d
 ${color0}un/decorate ${alignr} ${color}super+b
 ${color0}toggle fullscreen ${alignr} ${color}F11

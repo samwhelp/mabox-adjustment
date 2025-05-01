@@ -1,3 +1,5 @@
-conky -c ~/.config/conky/mabox_tools_mbcolor.conkyrc & sleep .5
-conky -c ~/.config/conky/shortcuts_mbcolor.conkyrc & sleep .5
-conky -c ~/.config/conky/sysinfo_mbcolor.conkyrc & sleep .5
+conky -c ~/.config/conky/logo_mbcolor.conkyrc & sleep 1s
+conky -c ~/.config/conky/mabox_tools_mbcolor.conkyrc & sleep 1s
+conky -c ~/.config/conky/shortcuts_mbcolor.conkyrc & sleep 1s
+conky -c ~/.config/conky/sysinfo_mbcolor.conkyrc & sleep 1s
+

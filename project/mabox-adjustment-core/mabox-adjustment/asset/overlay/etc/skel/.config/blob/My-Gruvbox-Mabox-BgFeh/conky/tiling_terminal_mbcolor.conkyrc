@@ -4,7 +4,7 @@ conky.config = {
 	own_window_type = 'desktop',
 	own_window_transparent = true,
 	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager,sticky',
-	own_window_colour = '#142c2c',
+	own_window_colour = '#414458',
 	own_window_class = 'Conky',
 	own_window_title = 'Mabox Terminator Conky',
     
@@ -20,13 +20,13 @@ conky.config = {
 	override_utf8_locale = true,
 
 -- COLORS
-	draw_shades = true,
+	draw_shades = false,
 	default_shade_color = '#000000',
 	draw_outline = false,
 	default_outline_color = '#222222',
 
-	default_color = '#d4be98',
-	color0 = '#5e5445',
+	default_color = '#504945',
+	color0 = '#89b482',
 
 -- BORDERS
 	draw_borders = false,
@@ -58,14 +58,14 @@ conky.config = {
 -- It is highly recommended to use own window with this one
 -- so double buffer won't be so big.
 	double_buffer = true,
-	update_interval = 1,
+	update_interval = 2,
 };
 
 conky.text = [[
 ${color}TILING TERMINAL WORKFLOW
 ${color}RUN  ${color0}${hr 1}
 ${voffset -2}${color0}terminal  ${alignr}${color}super+t
-${color0}quake-terminal (show/hide) ${alignr}${color}ctrl+~
+${color0}quake-terminal (show/hide) ${alignr}${color}ctrl+~,F12
 ${color}SPLIT  ${color0}${hr 1}
 ${voffset -2}${color0}horizontally  ${alignr}${color}ctrl+shift+o
 ${color0}vertically  ${alignr}${color}ctrl+shift+e

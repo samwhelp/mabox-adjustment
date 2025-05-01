@@ -166,7 +166,7 @@ launcher_tooltip = 0
 # Clock
 time1_format = %H:%M:%S
 #time2_format = %A %Y-%m-%d
-time2_format =
+#time2_format = %A %Y-%m-%d
 time1_font = Rubik 16
 #time1_font = Rubik 8
 #time2_font = Rubik 8

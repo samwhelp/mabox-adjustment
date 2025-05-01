@@ -4,12 +4,12 @@ conky.config = {
 	own_window_type = 'desktop',
 	own_window_transparent = true,
 	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager,sticky',
-	own_window_colour = '#130f2d',
+	own_window_colour = '#142814',
 	own_window_class = 'Conky',
 	own_window_title = 'Mabox Tools Conky',
     
-    alignment = 'top_left',
-	gap_x = 220,
+    alignment = 'bottom_left',
+	gap_x = 240,
 	gap_y = 60,
 	minimum_width = '200',
 
@@ -20,13 +20,13 @@ conky.config = {
 	override_utf8_locale = true,
 
 -- COLORS
-	draw_shades = true,
+	draw_shades = false,
 	default_shade_color = '#000000',
 	draw_outline = false,
 	default_outline_color = '#222222',
 
-	default_color = '#d4be98',
-	color0 = '#5e5445',
+	default_color = '#5E7EA5',
+	color0 = '#E0D3A4',
 
 -- BORDERS
 	draw_borders = false,
@@ -58,7 +58,7 @@ conky.config = {
 -- It is highly recommended to use own window with this one
 -- so double buffer won't be so big.
 	double_buffer = true,
-	update_interval = 1,
+	update_interval = 2,
 };
 
 conky.text = [[
